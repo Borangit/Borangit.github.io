@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lootbox Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lootbox Simulator</h1>
+        <p class="subtitle">*4 pity medallions are added every 60 pulls</p>
+        <div class="stats">
+            <p id="chest-count">Chests Opened: 0</p>
+            <p id="total-medallions">Total Medallions: 0</p>
+            <p id="common-count">Common: 0</p>
+            <p id="chibi-count">Chibi: 0</p>
+            <p id="rarer-chibi-count">Rare Chibi: 0</p>
+            <p id="total-cost">Total Cost: £0.00</p>
+        </div>
+        <div class="buttons">
+            <button onclick="openLootbox()">Open Lootbox</button>
+            <button onclick="open10Lootboxes()">Open 10 Lootboxes</button>
+            <button onclick="openUntilMilestone()">Open Until 25 Medallions or Rare Chibi</button>
+            <button onclick="openUntil10MedallionsOrChibi()">Open Until 10 Medallions or Chibi</button>
+            <button onclick="resetSimulator()" class="reset-button">Reset Simulator</button>
+        </div>
+        <div class="scrollable">
+            <ul id="items-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
